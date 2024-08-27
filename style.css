@@ -15,6 +15,12 @@ body {
 	background: #0072bb; /* mesmo background do footer */
 }
 
+.btn-default {
+    color: #fff;
+    background-color: #143543;
+    border-color: #0a719f;
+}
+
 body.bFont {
 	font-size:18px;
 }
