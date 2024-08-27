@@ -1,0 +1,48 @@
+@media (min-width:768px) {
+    body.contrast,
+    body.contrast header,
+    body.contrast #main,
+    body.contrast footer {
+        background:none;
+        background-color:#000 !important;
+        color:#FFF !important;
+    }
+    body.contrast #main,
+    body.contrast header {
+        border-bottom: 1px solid #FFF;
+    }
+    }
+    body.contrast h1.block-title {color: #FFF}
+    body.contrast .box h2 {color: #000;}
+    body.contrast .box {background: #FFFF00;}
+    body.contrast .btn-primary {background: #000;border-color: #000;}
+    body.contrast header#main-header .logo .logo-image {
+        background-image: url(https://web.archive.org/web/20240424005644im_/https://web.celepar.pr.gov.br/drupal/images/logo_parana_225x66_texto_branco.png) !important;
+    }
+    body.contrast .btn-default {
+        color: #FFF;
+        background-color: #000;
+        border-color: #FF0;
+    }
+}
+/*
+     FILE ARCHIVED ON 00:56:44 Apr 24, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:49:15 Aug 27, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.464
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.008
+  cdx.remote: 11.317
+  LoadShardBlock: 56.131 (3)
+  PetaboxLoader3.datanode: 157.343 (5)
+  load_resource: 163.142
+  PetaboxLoader3.resolve: 52.852
+  loaddict: 96.526
+*/

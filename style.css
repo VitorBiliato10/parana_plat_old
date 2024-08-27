@@ -1,0 +1,497 @@
+/* --------------------- RESET --------------------- */
+/*
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:' ';content:none;}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+*/
+/* --------------------- DEFINIÃ‡Ã•ES GERAIS --------------------- */
+body {
+	color:#333333;
+	font-family:'Arial', Helvetica, sans-serif;
+	font-size:13px;
+	background: #0072bb; /* mesmo background do footer */
+}
+
+body.bFont {
+	font-size:18px;
+}
+
+header#main-header {
+    background-color: #ffffff;
+}
+header#main-header {
+    display: block;
+    height: 120px;
+}
+header#main-header .logo {
+    margin-top: 27px;
+    height: 100px
+}
+
+a.btn {
+    white-space: break-spaces;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header#main-header .logo {
+        margin-top: 36px;
+        height: 75px
+    }
+}
+
+@media (max-width:767px) {
+	header#main-header {
+	    background-color: #444444;
+	    height: 61px;
+	    width: 100%;
+	    overflow: hidden;
+	}
+    header#main-header .logo {
+        margin-top: 10.5px;
+        height: 40px;
+        font-size: 1em;
+    }
+    header#main-header .logo .nome-instituicao {
+	    color: #ffffff;
+	}
+	.img-pia {
+	    margin-top: 4px !important;
+	}
+}
+header#main-header .logo .nome-instituicao {
+    border-color: #eeeeee !important;
+}
+header#main-header .logo .logo-image {
+    /*width: 80px;*/
+    /*height: 100px;*/
+    /*background: url(https://web.archive.org/web/20240424005720im_/http://web.celepar.pr.gov.br/drupal/images/logo_parana_vertical_80x100.png);*/
+    /*background-size: 100% 100%;*/
+    /*-webkit-transition: all .5s ease-in-out 0s;*/
+    /*transition: all .5s ease-in-out 0s;*/
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+
+    width: 225px;
+    height: 66px;
+    background: url(https://web.archive.org/web/20240424005720im_/https://web.celepar.pr.gov.br/drupal/images/logo_parana_225x66.png);
+    background-size: auto;
+    background-size: 100% 100%;
+    -webkit-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+}
+
+@media (max-width:767px) {
+    header#main-header .logo .logo-image {
+/*        background: url(https://web.archive.org/web/20240424005720im_/http://web.celepar.pr.gov.br/drupal/images/logo_parana_vertical_80x100_branco.png);
+        background-size: 100% 100%;
+        width: 32px;
+        height: 40px;*/
+        background: url(https://web.archive.org/web/20240424005720im_/https://web.celepar.pr.gov.br/drupal/images/logo_parana_225x66_texto_branco.png);
+        background-size: auto;
+        background-size: 100% 100%;
+        width: 115.90909px;
+        height: 34px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header#main-header .logo .logo-image {
+        width: 140px;
+        height: 41.06667px;
+    }
+}
+
+header#main-header.header-scroll .logo {
+    height: 65px;
+    margin-top: 12.5px
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header#main-header.header-scroll .logo {
+        height: 75px;
+        margin-top: 12.5px
+    }
+}
+
+@media (max-width:767px) {
+    header#main-header.header-scroll .logo {
+        margin-top: 10.5px;
+        height: 40px
+    }
+}
+
+header#main-header.header-scroll .logo .logo-image {
+    width: 52px;
+    height: 65px
+}
+
+@media (max-width:767px) {
+    header#main-header.header-scroll .logo .logo-image {
+        width: 32px;
+        height: 40px
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header#main-header.header-scroll .logo .logo-image {
+        width: 52px;
+        height: 65px
+    }
+}
+
+body.contrast header#main-header .logo .logo-image {
+    background-image: url(https://web.archive.org/web/20240424005720im_/http://web.celepar.pr.gov.br/drupal/images/logo_parana_vertical_80x100_branco.png)
+}
+header#main-header h1 {
+    font-size: 1.714em;
+    font-weight: 700;
+}
+header#main-header.header-scroll .logo .nome-instituicao {
+ padding:0 15px
+}
+header#main-header .logo .nome-instituicao {
+ font-weight:400;
+ display:inline-block;
+ border-left:1px solid;
+ padding:2px 15px 0;
+ vertical-align:middle;
+ margin:0;
+ /* width:calc(100% - (150px + 25px)); */
+ text-transform:uppercase;
+ font-size:.7em
+}
+@media (max-width:767px) {
+ header#main-header .logo .nome-instituicao {
+  width:auto;
+  border-color:rgba(255,255,255,.2);
+  padding:0 15px
+ }
+}
+
+
+
+
+
+
+
+
+.img-pia {
+    margin-top: 32px;
+}
+#main {
+	background:#EEE;
+	padding: 40px 0;
+}
+
+
+.box {
+	display: block;
+	background: #FFF;
+	border-radius:7px;
+	padding:30px 15px; /*padding:40px 40px;*/
+	text-align:center;
+}
+.box .dest-image {
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	margin-bottom: 20px;
+}
+.box h2 {
+	font-weight: normal;
+	color: #385778;
+	margin: 0 0 30px;
+	padding: 0;
+	font-size: 1.6em;
+	line-height: 125%;
+}
+
+@media (max-width: 991px) {
+		.box {margin-bottom: 30px;}
+}
+
+h1.block-title {
+	font-size: 1.714em;
+	font-weight: bold;
+	border-left: 5px solid #6ABD3B;
+	margin: 0 0 30px 0;
+	padding: 0 0 0 10px;
+	display: inline-block;
+	color: #333;
+}
+
+
+.btn-primary {
+	background: #6DBC03;
+	border-color: #6DBC03;
+	padding: 10px 35px;
+	font-weight: bold;
+}
+
+.box .btn-primary { 
+    width:  100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+	display: block;
+    padding-top: 35px;
+    padding-bottom: 36px;
+}
+footer#main-footer {
+    background-color: #0072bb;
+}
+
+footer#main-footer,
+footer#main-footer h2,
+footer#main-footer .map,
+footer#main-footer .contact,
+footer#main-footer .titulo-secretaria {
+    color: #ffffff;
+}
+
+footer#main-footer .footer-content {
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
+footer#main-footer .footer-content .enderecos {
+	float: left;
+	margin-right: 10px;	
+}
+@media (max-width: 991px) { 
+    footer#main-footer .footer-content .enderecos {
+        margin-top: 32px;
+    }
+}
+
+footer#main-footer .map:after,
+footer#main-footer .contact:after {
+    background-color: #6abd3b;
+}
+
+footer#main-footer .contact:hover::after,
+footer#main-footer .map:hover::after {
+    background-color: #ffffff;
+}
+
+footer#main-footer .footer-social {
+ text-align:center
+}
+footer#main-footer .footer-social a,
+footer#main-footer .footer-social a:active,
+footer#main-footer .footer-social a:focus,
+footer#main-footer .footer-social a:visited {
+ background:0 0;
+ border-radius:50%;
+ color:#fff;
+ display:inline-block;
+ font-size:1.286em;
+ height:38px;
+ line-height:36px;
+ text-align:center;
+ width:38px;
+ text-decoration:none
+}
+footer#main-footer .footer-social a:active:hover,
+footer#main-footer .footer-social a:focus:hover,
+footer#main-footer .footer-social a:hover,
+footer#main-footer .footer-social a:visited:hover {
+ text-decoration:none
+}
+footer#main-footer .footer-social a:active:hover.fa-facebook-f,
+footer#main-footer .footer-social a:focus:hover.fa-facebook-f,
+footer#main-footer .footer-social a:hover.fa-facebook-f,
+footer#main-footer .footer-social a:visited:hover.fa-facebook-f {
+ background-color:#3367a1;
+ border-color:#3367a1
+}
+footer#main-footer .footer-social a:active:hover.fa-twitter,
+footer#main-footer .footer-social a:focus:hover.fa-twitter,
+footer#main-footer .footer-social a:hover.fa-twitter,
+footer#main-footer .footer-social a:visited:hover.fa-twitter {
+ background-color:#00aeef;
+ border-color:#00aeef
+}
+footer#main-footer .footer-social a:active:hover.fa-youtube,
+footer#main-footer .footer-social a:focus:hover.fa-youtube,
+footer#main-footer .footer-social a:hover.fa-youtube,
+footer#main-footer .footer-social a:visited:hover.fa-youtube {
+ background-color:#e7503f;
+ border-color:#e7503f
+}
+footer#main-footer .footer-social a:active:hover.fa-instagram,
+footer#main-footer .footer-social a:focus:hover.fa-instagram,
+footer#main-footer .footer-social a:hover.fa-instagram,
+footer#main-footer .footer-social a:visited:hover.fa-instagram {
+ background-color:#cb65b1;
+ border-color:#cb65b1
+}
+footer#main-footer .footer-social a:active:hover.fa-flickr,
+footer#main-footer .footer-social a:focus:hover.fa-flickr,
+footer#main-footer .footer-social a:hover.fa-flickr,
+footer#main-footer .footer-social a:visited:hover.fa-flickr {
+ background-color:#ff0084;
+ border-color:#ff0084
+}
+footer#main-footer .footer-social a:active:hover.fa-rss,
+footer#main-footer .footer-social a:focus:hover.fa-rss,
+footer#main-footer .footer-social a:hover.fa-rss,
+footer#main-footer .footer-social a:visited:hover.fa-rss {
+ background-color:#f68121;
+ border-color:#f68121
+}
+footer#main-footer .footer-social a:active:hover.fa-google-plus-g,
+footer#main-footer .footer-social a:focus:hover.fa-google-plus-g,
+footer#main-footer .footer-social a:hover.fa-google-plus-g,
+footer#main-footer .footer-social a:visited:hover.fa-google-plus-g {
+ background-color:#de5e53;
+ border-color:#de5e53
+}
+footer#main-footer .footer-social a:active:hover.fa-linkedin,
+footer#main-footer .footer-social a:focus:hover.fa-linkedin,
+footer#main-footer .footer-social a:hover.fa-linkedin,
+footer#main-footer .footer-social a:visited:hover.fa-linkedin {
+ background-color:#0077b5;
+ border-color:#0077b5
+}
+footer#main-footer .footer-social a:active:hover.fa-snapchat-ghost,
+footer#main-footer .footer-social a:focus:hover.fa-snapchat-ghost,
+footer#main-footer .footer-social a:hover.fa-snapchat-ghost,
+footer#main-footer .footer-social a:visited:hover.fa-snapchat-ghost {
+ background-color:#ffec00;
+ border-color:#ffec00
+}
+footer#main-footer .footer-social a:active:hover.fa-pinterest-p,
+footer#main-footer .footer-social a:focus:hover.fa-pinterest-p,
+footer#main-footer .footer-social a:hover.fa-pinterest-p,
+footer#main-footer .footer-social a:visited:hover.fa-pinterest-p {
+ background-color:#bd0e20;
+ border-color:#bd0e20
+}
+footer#main-footer .footer-social a:active:hover.fa-whatsapp,
+footer#main-footer .footer-social a:focus:hover.fa-whatsapp,
+footer#main-footer .footer-social a:hover.fa-whatsapp,
+footer#main-footer .footer-social a:visited:hover.fa-whatsapp {
+ background-color:#4dc247;
+ border-color:#4dc247
+}
+footer#main-footer .footer-social a:active:hover.fa-map-marker-alt,
+footer#main-footer .footer-social a:focus:hover.fa-map-marker-alt,
+footer#main-footer .footer-social a:hover.fa-map-marker-alt,
+footer#main-footer .footer-social a:visited:hover.fa-map-marker-alt {
+ background-color:#00aeef;
+ border-color:#00aeef
+}
+footer#main-footer .footer-social a:active:hover.fa-headset,
+footer#main-footer .footer-social a:focus:hover.fa-headset,
+footer#main-footer .footer-social a:hover.fa-headset,
+footer#main-footer .footer-social a:visited:hover.fa-headset {
+ background-color:#00aeef;
+ border-color:#00aeef
+}
+footer#main-footer .footer-social a:active:hover.fa-comment-dots,
+footer#main-footer .footer-social a:focus:hover.fa-comment-dots,
+footer#main-footer .footer-social a:hover.fa-comment-dots,
+footer#main-footer .footer-social a:visited:hover.fa-comment-dots {
+ background-color:#666;
+ border-color:#666
+}
+@media (max-width:1024px) {
+ footer#main-footer .footer-social {
+  display:table;
+  margin:0 auto;
+  float:none
+ }
+}
+@media (max-width:991px) {
+ .btn {
+    font-size: 18px;
+ }
+ footer#main-footer .footer-social {
+  margin:20px auto
+ }
+}
+footer#main-footer .footer-logo-celepar {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width:992px) {
+ .col-sm-4,
+ .col-md-4 {
+    margin-bottom: 30px;
+ }
+}
+@media (min-width:768px) and (max-width:991px) {
+    #main .container > .row > .col-sm-6:nth-child(odd) { clear:both; }
+}
+
+/* INICIAR */
+#main {
+    padding: 20px 0 0;
+}
+
+#content h1.page-title {
+    border-left: solid 7px;
+    border-color: #00b0e6;
+    color: #333333;
+    font-size: 1.924em;
+    font-weight: 700;
+    line-height: 125%;
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+body.contrast #content h1.page-title  {
+    color: #FFFFFF;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+#content a {
+  font-weight: 700;
+}
+a, a:visited, a:active, a:focus, a:hover {
+  color: #00b0e6;
+}
+/*
+     FILE ARCHIVED ON 00:57:20 Apr 24, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:49:15 Aug 27, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.535
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.011
+  esindex: 0.01
+  cdx.remote: 36.373
+  LoadShardBlock: 113.849 (3)
+  PetaboxLoader3.datanode: 78.839 (5)
+  PetaboxLoader3.resolve: 129.606 (2)
+  load_resource: 125.109
+  loaddict: 17.253
+*/
